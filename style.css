@@ -30,7 +30,7 @@
     }
 
     .animate-auto-scroll {
-    animation: auto-scroll-x 30s  linear infinite;
+    animation: auto-scroll-x 30s linear infinite;
     }
     
     .pause-on-hover:hover {

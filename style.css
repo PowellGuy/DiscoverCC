@@ -18,25 +18,29 @@
     
 }
 
-@theme{
+/* @theme{
     --font-display: "font1", sans-serif;
     --font-display: "font2", sans-serif;
-}
+} */
 
-@layer utilities {
+
     @keyframes auto-scroll-x {
-        0%   { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
+        from {translate: 0;}
+        to { translate: -50%;}
     }
 
-    .animate-auto-scroll {
-    animation: auto-scroll-x 30s linear infinite;
+    /* register utility inside Tailwind layer */
+    @layer utilities {
+    .animate-auto-scroll-x {
+        animation: auto-scroll-x 10s infinite linear;
     }
-    
-    .pause-on-hover:hover {
+    @layer utilities {
+  .pause-on-hover:hover {
     animation-play-state: paused;
-    }
+  }
 }
+}
+
 
 body,html{
     width: 100%;
@@ -46,14 +50,10 @@ body,html{
 }
 
 ::-webkit-scrollbar{
-    background-color: black;
-    height: 25px;
-    border-color: black;
-    border-style: solid;
-    border-width: 2px;
+    display: hidden;
 }
 
-::-webkit-scrollbar-thumb{ 
+/* ::-webkit-scrollbar-thumb{ 
  
 
     height: 10px;
@@ -62,6 +62,6 @@ body,html{
     border-color: white;
     border-style: double;
 
-}
+} */
 
   /* https://grabient.com/HQFgrA7ANKBsCcMBMBGWMTyRsJlL2AA5YwYJ4BmGI3GWEQsJaS0ABnZhTGpThQxmg9kA  */

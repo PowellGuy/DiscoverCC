@@ -39,11 +39,11 @@
             </div>            
           </div>
         
-          <div class="w-full h-auto bg-[#000000] flex flex-col justify-center items-center mb-64">
+          <div class="w-full h-auto bg-[#000000] flex flex-col justify-center items-center mb-32">
             <h1 class="mt-6 font-[font1] text-7xl text-white">Discovering <span class="text-orange-500"> YouTubers </span></h1>
             <p class="font-[font2] text-xl text-white">A community-curated space for local content creators. Browse, discover and support local creators near you. </p>
              
-            <div class="w-[220px] h-auto p-2 mt-6 mb-6 bg-orange-500 flex flex-row justify-center items-center gap-2 border-4 rounded-xl border-dashed border-white hover:bg-orange-600">
+            <div class="w-[220px] h-auto p-2 mt-6 bg-orange-500 flex flex-row justify-center items-center gap-2 border-4 rounded-xl border-dashed border-white hover:bg-orange-600">
                 <img class="w-8 h-auto object-contain" src="/images/send.png">
                 <h1 class="text-white">Submit a Creator</h1>
             </div>
@@ -52,44 +52,50 @@
       </div>
     </section>
 
-    <section class="w-full"> 
-      <div class="flex w-full border-2 border-dashed border-l-0 border-r-0 border-white border-opacity-75 justify-center">
-        <div class="flex w-full animate-auto-scroll scroll-smooth pause-on-hover pb-6 mb-12 gap-1 mt-12 justify-center">
-          
+    <section class="w-full flex flex-col justify-center items-center">
 
-          <div class="flex flex-col justify-center items-center shrink-0 w-full sm:w-[15%] rounded-xl">
-            <img class="w-64 rounded-xl" src="/images/image1.png"/>
-            <p class="text-white">[Channel name]</p>
-            <p class="text-white">[Category]</p>
-          </div>
+      <h1 class="font-[font2] text-xl text-white">Find a creator near you</h1>
+      
+      <div class="flex w-full h-auto border-2 border-dashed border-l-0 border-r-0 border-white border-opacity-75 justify-center bg-[#222831]">
 
-          <div class="flex flex-col justify-center items-center shrink-0 w-full sm:w-[15%] rounded-xl">
-            <img class="w-64 rounded-xl" src="/images/image2.png"/>
-            <p class="text-white">[Channel name]</p>
-            <p class="text-white">[Category]</p>
-          </div>
-          
-          <div class="flex flex-col justify-center items-center shrink-0 w-full sm:w-[15%] rounded-xl">
-            <img class="w-64 rounded-xl" src="/images/image3.png"/>
-            <p class="text-white">[Channel name]</p>
-            <p class="text-white">[Category]</p>
-          </div>
+        <!-- container -->
+        <div class="flex w-[90%] h-auto pb-6 mb-12 mt-12 border-solid border-4 border-red-200 overflow-x-auto gap-1 rounded-xl pause-on-hover">
+          <!-- group -->
+          <div class="flex justify-center items-center pr-1 animate-auto-scroll-x overflow-x-hidden pause-on-hover">
+            <!-- cards -->
+            <div class="flex flex-col justify-center items-center w-full rounded-xl gap-1">
+              <img class="w-128 h-128 rounded-xl" src="/images/image1.png"/>
+              <p class="text-white">[Channel name]</p>
+              <p class="text-white">[Category]</p>
+            </div>
 
-           <div class="flex flex-col justify-center items-center shrink-0 w-full sm:w-[15%] rounded-xl">
-            <img class="w-64 rounded-xl" src="/images/image4.png"/>
-             <p class="text-white">[Channel name]</p>
-            <p class="text-white">[Category]</p>
-          </div>
+               <div class="flex flex-col justify-center items-center w-full rounded-xl gap-1">
+              <img class="w-128 h-128 flex 0 0 5em rounded-xl" src="/images/image2.png"/>
+              <p class="text-white">[Channel name]</p>
+              <p class="text-white">[Category]</p>
+            </div>
+            
+             <div class="flex flex-col justify-center items-center w-full rounded-xl gap-1">
+              <img class="w-128 h-128 rounded-xl" src="/images/image3.png"/>
+              <p class="text-white">[Channel name]</p>
+              <p class="text-white">[Category]</p>
+            </div>
 
-           <div class="flex flex-col justify-center items-center shrink-0 w-full sm:w-[15%] rounded-xl">
-            <img class="w-64 rounded-xl" src="/images/image5.png"/>
-            <p class="text-white">[Channel name]</p>
-            <p class="text-white">[Category]</p>
-          </div>
+             <div class="flex flex-col justify-center items-center w-full rounded-xl gap-1">
+              <img class="w-128 h-128" src="/images/image4.png"/>
+              <p class="text-white">[Channel name]</p>
+              <p class="text-white">[Category]</p>
+            </div>
 
-          
-        </div> 
-      </div>
+            <div class="flex flex-col justify-center items-center w-full rounded-xl gap-1">
+              <img class="w-128 h-128" src="/images/image5.png"/>
+              <p class="text-white">[Channel name]</p>
+              <p class="text-white">[Category]</p>
+            </div>
+            
+          </div> 
+        </div>
+
     </section>
 
     <script src="index.js"></script>

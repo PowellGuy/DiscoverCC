@@ -24,44 +24,26 @@
 } */
 
 
-    @keyframes auto-scroll-x {
-        from {translate: 0;}
-        to { translate: -50%;}
-    }
-
-    /* register utility inside Tailwind layer */
-    @layer utilities {
-    .animate-auto-scroll-x {
-        animation: auto-scroll-x 10s infinite linear;
-    }
-    @layer utilities {
-  .pause-on-hover:hover {
-    animation-play-state: paused;
-  }
-}
-}
-
 
 body,html{
     width: 100%;
     height: 100%;
-    background-color: #000000;
-    overflow: hidden;
+    background-color: #111827;
+    
 }
 
 ::-webkit-scrollbar{
-    display: hidden;
+    
 }
 
-/* ::-webkit-scrollbar-thumb{ 
+::-webkit-scrollbar-thumb{ 
  
-
     height: 10px;
     background-color: oklch(64.6% 0.222 41.116);
     border-radius: 100px;
     border-color: white;
     border-style: double;
 
-} */
+}
 
   /* https://grabient.com/HQFgrA7ANKBsCcMBMBGWMTyRsJlL2AA5YwYJ4BmGI3GWEQsJaS0ABnZhTGpThQxmg9kA  */

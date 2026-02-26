@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="style.css">
 
   </head>
-  <body>
+  <body class="bg-stone-100">
     <section class="w-full">
       <nav class="w-full h-14 flex flex-col bg-[#393E46]">
         <div class="w-full h-14 grid grid-cols-2">
-          <div class="w-full h-14 bg-[#000000] flex flex-row justify-center p-3 border-b-4 border-white">
+          <div class="w-full h-14 bg-[#000000] flex flex-row justify-center p-3 border-b-4 border-stone-200">
             <div class="text-white text-lg animate-pulse ">by Jordan Powell</div>
              <img class="w-6 h-6 pt-1 object-contain motion-safe:animate-pulse" src="/images/edit.png">  
           </div>
-           <div class="w-full h-14 bg-[#000000] flex flex-row justify-end gap-4 p-3 border-b-4 border-white">
+           <div class="w-full h-14 bg-[#000000] flex flex-row justify-end gap-4 p-3 border-b-4 border-stone-200">
             <button class="w-24 h-8 text-white border-white border-2 rounded-md hover:bg-orange-600 hover:border-white hover:text-white">Home</button>
             <button class="w-24 h-8 text-white border-white border-2 rounded-md hover:bg-orange-600 hover:border-white hover:text-white">Contact us</button>
            </div>
@@ -26,22 +26,22 @@
     </section>
 
     <section class="w-full"> 
-      <div class="w-full h-auto bg-[#191e24] flex flex-row">
-        <div class="w-full h-auto bg-[#191e24]flex flex-col justify-center border-b-2">
+      <div class="w-full h-auto bg-white flex flex-row">
+        <div class="w-full h-auto bg-white flex flex-col justify-center border-b-2">
           <div class="w-full h-auto flex flex-row justify-center mt-12">
-            <div class="h-auto p-2 flex flex-row justify-center items-center gap-2 border-b-4 rounded-xl border-solid border-white">
-              <img class="w-8 h-8 object-contain motion-safe:animate-bounce" src="/images/location_white.png">
+            <div class="h-auto p-2 flex flex-row justify-center items-center gap-2 border-b-4 rounded-xl border-solid border-[]">
+              <img class="w-8 h-8 object-contain motion-safe:animate-bounce" src="/images/location_black.png">
                 <!-- <span class="relative flex size-3">
                 <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
                 <span class="relative inline-flex size-3 rounded-full bg-orange-500"></span> -->
-                </span>
-              <h1 class="text-white "> Nottingham, UK</h1>
+                <!-- </span> -->
+              <h1 class="text-black"> Nottingham, UK</h1>
             </div>            
           </div>
         
-          <div class="w-full h-auto bg-[#191e24] flex flex-col justify-center items-center mb-32">
-            <h1 class="mt-6 font-[font1] text-7xl text-white">Discovering <span class="text-[#FF0000]"> YouTubers </span></h1>
-            <p class="font-[font2] text-xl text-white">A community-curated space for local content creators. Browse, discover and support local creators near you.</p>
+          <div class="w-full h-auto bg-bg-white flex flex-col justify-center items-center mb-32">
+            <h1 class="mt-6 font-[font1] text-7xl text-black">Discovering <span class="text-[#FF0000]"> YouTubers </span></h1>
+            <p class="font-[font2] text-xl text-gray-700">A community-curated space for local content creators. Browse, discover and support local creators near you.</p>
              
             <div class="w-[220px] h-auto p-2 mt-6 bg-[#FF0000] flex flex-row justify-center items-center gap-2 border-4 rounded-xl border-dashed border-white hover:bg-red-600">
                 <img class="w-8 h-auto object-contain" src="/images/send.png">
@@ -53,109 +53,41 @@
     </section>
 
     <section class="w-full h-auto">
-      <div class="w-full h-auto flex flex-col justify-center items-center bg-[#191e24]">
-        <h1 class="font-[font2] text-2xl text-white">Find a creator near you</h1>
-        <div class="flex w-[100%] h-auto bg-[#191e24] justify-center border-solid">
+      <div class="w-full h-auto flex flex-col justify-center items-center bg-stone-100">
+        <h1 class="font-[font2] text-2xl text-gray-700">Find a creator near you</h1>
+        <div class="flex w-[100%] h-auto bg-stone-100 justify-center border-solid">
         <!-- container -->
-          <div class="grid grid-cols-5 grid-flow-row auto-cols-max gap-6 mt-4 bg-black border-solid border-2 rounded-xl">
+          <div class="grid grid-cols-4 grid-flow-row auto-cols-max gap-6 mt-4 bg-stone-100 border-solid border-4 rounded-xl p-4">
 
-            <div class=" flex flex-col h-auto justify-center items-center text-center p-4 rounded-xl">
-              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-white transition-all" src="/images/image1.png"/>
-              <p class="text-white">[Channel name]</p>
-              <p class="text-white">[Category]</p>
+            <div class="flex flex-col h-auto bg-stone-100 justify-center items-center text-center p-4 rounded-xl">
+              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-stone-600 transition-all" src="/images/image1.png"/>
+              <p class="text-black">[Channel name]</p>
+              <p class="text-black">[Category]</p>
             </div>
 
-            <div class=" flex flex-col h-auto justify-center items-center text-center p-4 rounded-xl">
-              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-white transition-all" src="/images/image2.png"/>
-              <p class="text-white">[Channel name]</p>
-              <p class="text-white">[Category]</p>
+            <div class="flex flex-col h-auto bg-stone-100 justify-center items-center text-center p-4 rounded-xl">
+              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-stone-600 transition-all" src="/images/image2.png"/>
+              <p class="text-black">[Channel name]</p>
+              <p class="text-black">[Category]</p>
             </div>
+            
+             <div class="flex flex-col h-auto bg-stone-100 justify-center items-center text-center p-4 rounded-xl">
+              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-stone-600 transition-all" src="/images/image3.png"/>
+              <p class="text-black">[Channel name]</p>
+              <p class="text-black">[Category]</p>
+            </div>      
 
-            <div class=" flex flex-col h-auto justify-center items-center text-center p-4 rounded-xl">
-              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-white transition-all" src="/images/image3.png"/>
-              <p class="text-white">[Channel name]</p>
-              <p class="text-white">[Category]</p>
-            </div>
+             <div class="flex flex-col h-auto bg-stone-100 justify-center items-center text-center p-4 rounded-xl">
+              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-stone-600 transition-all" src="/images/image4.png"/>
+              <p class="text-black">[Channel name]</p>
+              <p class="text-black">[Category]</p>
+            </div>      
 
-            <div class=" flex flex-col h-auto justify-center items-center text-center p-4 rounded-xl">
-              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-white transition-all" src="/images/image4.png"/>
-              <p class="text-white">[Channel name]</p>
-              <p class="text-white">[Category]</p>
-            </div>
-
-            <div class=" flex flex-col h-auto justify-center items-center text-center p-4 rounded-xl">
-              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-white  transition-all" src="/images/image5.png"/>
-              <p class="text-white">[Channel name]</p>
-              <p class="text-white">[Category]</p>
-            </div>
-           
-            <div class=" flex flex-col h-auto justify-center items-center text-center p-4 rounded-xl">
-              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-white transition-all" src="/images/image1.png"/>
-              <p class="text-white">[Channel name]</p>
-              <p class="text-white">[Category]</p>
-            </div>
-
-            <div class=" flex flex-col h-auto justify-center items-center text-center p-4 rounded-xl">
-              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-white transition-all" src="/images/image2.png"/>
-              <p class="text-white">[Channel name]</p>
-              <p class="text-white">[Category]</p>
-            </div>
-
-            <div class=" flex flex-col h-auto justify-center items-center text-center p-4 rounded-xl">
-              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-white transition-all" src="/images/image3.png"/>
-              <p class="text-white">[Channel name]</p>
-              <p class="text-white">[Category]</p>
-            </div>
-
-            <div class=" flex flex-col h-auto justify-center items-center text-center p-4 rounded-xl">
-              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-white transition-all" src="/images/image4.png"/>
-              <p class="text-white">[Channel name]</p>
-              <p class="text-white">[Category]</p>
-            </div>
-
-            <div class=" flex flex-col h-auto justify-center items-center text-center p-4 rounded-xl">
-              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-white  transition-all" src="/images/image5.png"/>
-              <p class="text-white">[Channel name]</p>
-              <p class="text-white">[Category]</p>
-            </div>
-
-            <div class=" flex flex-col h-auto justify-center items-center text-center p-4 rounded-xl">
-              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-white transition-all" src="/images/image1.png"/>
-              <p class="text-white">[Channel name]</p>
-              <p class="text-white">[Category]</p>
-            </div>
-
-            <div class=" flex flex-col h-auto justify-center items-center text-center p-4 rounded-xl">
-              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-white transition-all" src="/images/image2.png"/>
-              <p class="text-white">[Channel name]</p>
-              <p class="text-white">[Category]</p>
-            </div>
-
-            <div class=" flex flex-col h-auto justify-center items-center text-center p-4 rounded-xl">
-              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-white transition-all" src="/images/image3.png"/>
-              <p class="text-white">[Channel name]</p>
-              <p class="text-white">[Category]</p>
-            </div>
-
-            <div class=" flex flex-col h-auto justify-center items-center text-center p-4 rounded-xl">
-              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-white transition-all" src="/images/image4.png"/>
-              <p class="text-white">[Channel name]</p>
-              <p class="text-white">[Category]</p>
-            </div>
-
-            <div class=" flex flex-col h-auto justify-center items-center text-center p-4 rounded-xl">
-              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-white  transition-all" src="/images/image5.png"/>
-              <p class="text-white">[Channel name]</p>
-              <p class="text-white">[Category]</p>
-            </div>
-
-              <div class=" flex flex-col h-auto justify-center items-center text-center p-4 rounded-xl">
-              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-white  transition-all" src="/images/image5.png"/>
-              <p class="text-white">[Channel name]</p>
-              <p class="text-white">[Category]</p>
-            </div>
-
-         
+             <div class="flex flex-col h-auto bg-stone-100 justify-center items-center text-center p-4 rounded-xl">
+              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-stone-600 transition-all" src="/images/image5.png"/>
+              <p class="text-black">[Channel name]</p>
+              <p class="text-black">[Category]</p>
+            </div>      
                                   
           </div> 
         </div>

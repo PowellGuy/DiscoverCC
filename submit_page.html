@@ -11,30 +11,132 @@
 
   <body class="bg-stone-100">
 
-      <nav class="w-full h-14 flex flex-col bg-[#393E46]">
+     <div class="absolute inset-0 -z-10 bg-cover blur-sm scale-125 opacity-50"
+       style="background-image: url('/images/background_pattern.jpg');">
+    </div>  
+
+      <nav class="w-full h-14 flex flex-col bg-[#393E46] z-10">
         <div class="w-full h-14 grid grid-cols-2">
           <div class="w-full h-14 bg-[#000000] flex flex-row justify-center p-3 border-b-4 border-stone-200">
             <div class="text-white text-lg animate-pulse ">by Jordan Powell</div>
              <img class="w-6 h-6 pt-1 object-contain motion-safe:animate-pulse" src="/images/edit.png">  
           </div>
-          
            <div class="w-full h-14 bg-[#000000] flex flex-row justify-end gap-4 p-3 border-b-4 border-stone-200">
-            <button class="w-24 h-8 text-white border-white border-2 rounded-md hover:bg-orange-600 hover:border-white hover:text-white">Home</button>
-            <button class="w-24 h-8 text-white border-white border-2 rounded-md hover:bg-orange-600 hover:border-white hover:text-white">Contact us</button>
+            <a href="/home_page.html">
+              <button class="w-24 h-8 text-white border-white border-2 rounded-md hover:bg-[#FF0000] hover:border-white hover:text-white">Home</button>
+            </a> 
+            <a href="/home_page.html">
+              <button class="w-24 h-8 text-white border-white border-2 rounded-md hover:bg-[#FF0000] hover:border-white hover:text-white">Creator</button>
+            </a> 
            </div>
         </div>
       </nav>
 
+      <div class="w-full h-[100%] grid grid-col-2 grid-flow-col justify-center items-center">
 
-    
-        <div class="w-full h-[100%] flex justify-center items-center">
-            <div class="w-[500px] h-[500px] bg-black"> 
+        <!-- Left side -->
+        <div class="w-[612px] h-[612px] bg-stone-100 flex flex-col shadow-b-lg"> 
+
+          <div class="w-full h-[5%] flex pl-4 pt-1 bg-stone-200">
+            <img class="w-[24px] h-[24px] flex flex-row flex-start" src="/images/arrow_back.png">
+            <h1>Back</h1>
+
+          </div>
+
+          <div class="w-full h-[15%] flex flex-col items-center pl-4">
+            <h1 class="flex font-[font1] text-[32px] text-black"> Preview</h1>
+            <h2 class="flex items-center text-center text-gray-700"> This is a preview of your creator. </h1>
+          </div>
+
+          <div class="w-full h-[70%] flex flex-col justify-center items-center p-2 gap-5">
+            <div class="flex flex-col w-[50%] h-auto bg-stone-100 shadow-lg justify-center items-center text-center p-4 rounded-xl">
+              <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-stone-600 transition-all" src="/images/image5.png"/>
+              <p class="text-black">[Channel name]</p>
+              <p class="text-black">[Category]</p>
+            </div>
+          </div>
+
+          <div class="w-full h-[10%] flex bg-stone-200 justify-center items-center ">
+              <p class="font-[font1] text-lg">Recommended image size 612px - 612px</p>
+          </div>
+
+        
         </div>
-    </div>
-  
-   
- 
 
+        <!-- right side -->
+
+        <div class="w-[612px] h-[612px] bg-stone-100 flex flex-col shadow-b-lg"> 
+
+          <div class="w-full h-[5%] flex pl-4 pt-1 bg-stone-200">
+            <!-- <img class="w-[24px] h-[24px] flex flex-row flex-start" src="/images/arrow_back.png">
+            <h1>Back</h1> -->
+          </div>
+
+          <div class="w-full h-[15%] flex flex-col pl-4 items-center">
+            <h1 class="flex font-[font1] text-[32px] text-black"> Submit a Creator</h1>
+            <h2 class="flex items-center text-center text-gray-700"> Know someone in your local area? Add their channel details below</h1>
+          </div>
+
+          <div class="w-full h-[70%] flex flex-col p-2 gap-5">
+          
+            <div class="w-full h-auto flex flex-col">
+              <label class="flex font-[font1] text-[18px] text-black">Creator Name</label>
+              <input type="text" name="name" placeholder="Channel name..." class="flex p-2 rounded-md"/>
+            </div>
+
+            <div class="w-full h-auto flex flex-col">
+              <label class="flex font-[font1] text-[18px] text-black">Channel URL</label>
+               <input type="text" name="name" placeholder="Channel URL..." class="flex p-2 rounded-md"/>               
+            </div>
+
+            <div class="w-full h-auto flex flex-col">
+              <label class="flex font-[font1] text-[18px] text-black">Category</label>             
+              <div class="grid shrink-0 grid-cols-1 focus-within:relative">
+                <select id="" class="col-start-1  row-start-1 w-full appearance-none rounded-md py-1.5 pr-7 pl-3 text-base text-gray-500 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                  <option>Gaming</option>
+                  <option>Entertainment</option>
+                  <option>Comedy</option>
+                  <option>Film & Animation</option>
+                  <option>Autos & Vehicles</option>
+                  <option>Education</option>
+                  <option>Howto & Style</option>
+                  <option>Music</option>
+                  <option>News & Politics</option>
+                  <option>Nonprofits & Activism</option>
+                  <option>People & Blogs</option>
+                  <option>Pets & Animals</option>
+                  <option>Science & Technology</option>
+                  <option>Sports</option>
+                  <option>Travel & Events</option>
+                </select>
+                <img class="pointer-events-none col-start-1 row-start-1 mr-2 self-center justify-self-end" src="/images/arrow-dropdown.png">
+              </div>
+            </div>
+
+          <div class="w-full h-full flex flex-col justify-center items-center">
+            
+           <div class="w-full h-auto flex flex-col">
+              <label class="flex font-[font1] text-[18px] text-black">Avatar image (upload)</label> 
+           
+              <div class="w-full h-full p-2  flex flex-col justify-center items-center bg-red-500 gap-2 border-4 rounded-xl border-dashed border-white hover:bg-red-600">
+                <img class="w-8 h-auto object-contain" src="/images/Upload_white.png">
+                <h1 class="text-white">Upload an image</h1>
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+          <div class="w-full h-[10%] flex bg-stone-200 justify-center items-center ">
+            
+            <div class="w-[220px] h-auto p-2 mb-1 mt-2 bg-red-500  flex flex-row justify-center items-center gap-2 border-4 rounded-xl border-solid border-white hover:bg-red-600">
+                <img class="w-8 h-auto object-contain" src="/images/send.png">
+                <h1 class="text-white">Submit Creator</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     
     <script src="index.js"></script>
 

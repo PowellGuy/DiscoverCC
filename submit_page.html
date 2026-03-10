@@ -51,8 +51,8 @@
           <div class="w-full h-[70%] flex flex-col justify-center items-center p-2 gap-5">
             <div class="flex flex-col w-[50%] h-auto bg-stone-100 shadow-lg justify-center items-center text-center p-4 rounded-xl">
               <img class="flex w-48 h-48 mb-2 shrink-0 overflow-hidden rounded-full ring-4 ring-border ring-stone-600 transition-all" src="/images/image5.png"/>
-              <p class="text-black">[Channel name]</p>
-              <p class="text-black">[Category]</p>
+              <p id="preview_Name" class="text-black">[Channel name]</p>
+              <p id="preview_Category" class="text-black">[Category]</p>
             </div>
           </div>
 
@@ -92,7 +92,7 @@
             <div class="w-full h-auto flex flex-col">
               <label class="flex font-[font1] text-[18px] text-black">Category</label>             
               <div class="grid shrink-0 grid-cols-1 focus-within:relative">
-                <select id="" class="col-start-1  row-start-1 w-full appearance-none rounded-md py-1.5 pr-7 pl-3 text-base text-gray-500 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                <select id="creator_Type" class="col-start-1  row-start-1 w-full appearance-none rounded-md py-1.5 pr-7 pl-3 text-base text-gray-500 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
                   <option>Gaming</option>
                   <option>Entertainment</option>
                   <option>Comedy</option>
@@ -130,8 +130,8 @@
 
           <div class="w-full h-[10%] flex bg-stone-200 justify-center items-center ">
             
-            <div id="submit_Btn" class="w-[220px] h-auto p-2 mb-1 mt-2 bg-red-500  flex flex-row justify-center items-center gap-2 border-4 rounded-xl border-solid border-white hover:bg-red-600" onclick="submit_Btn()">
-                <img class="w-8 h-auto object-contain" src="/images/send.png">
+            <div id="submit_Btn" class="w-[220px] h-auto p-2 mb-1 mt-2 bg-red-500  flex flex-row justify-center items-center gap-2 border-4 rounded-xl border-solid border-white hover:bg-red-600">
+                <img class="w-8 h-auto object-contain" src="/images/send.png" onclick="submit_Btn()">
                 <h1 class="text-white">Submit Creator</h1>
             </div>
           </div>
@@ -139,7 +139,7 @@
       </div>
       
     
-    <script src="index.js"></script>
+    <script src="/dist/index.js"></script>
 
   </body>
 </html>

@@ -1,13 +1,16 @@
-function submit_Btn()
+function preview_Btn()
 {
+
+    //variables for storing the creator form inputs.
     const creator_name = document.querySelector("#creator_Name") as HTMLInputElement;
-    const creator_URL = document.querySelector("#creator_URL") as HTMLInputElement;
-    const creator_Category = document.querySelector("#creator_Type") as HTMLSelectElement;
-    
-    const myElement = document.querySelector("#preview_Name") as HTMLInputElement;
-    myElement.innerHTML;
+    const creator_url = document.querySelector("#creator_URL") as HTMLInputElement;
+    const creator_category = document.querySelector("#creator_Type") as HTMLSelectElement;
+    const preview_name = document.querySelector("#preview_Name")!;
+    const preview_category = document.querySelector("#preview_Category")!;
 
-    let creator: [number, string, string, string]  = [0, creator_name.value, creator_URL.value, creator_Category.value];
+    //tuple for all details
+    let creator: [number, string, string, string]  = [0, creator_name.value, creator_url.value, creator_category.value];
 
-    alert(creator);
+    preview_name.innerHTML = creator[1];
+    preview_category.innerHTML = creator[3];
 }

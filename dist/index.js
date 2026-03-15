@@ -9,11 +9,5 @@ function preview_Btn() {
     let creator = [0, creator_name.value, creator_url.value, creator_category.value];
     preview_name.innerHTML = creator[1];
     preview_category.innerHTML = creator[3];
-    creator_name.addEventListener('keyup', (e) => {
-        if (e.key === "Enter") {
-            preview_name.innerHTML = creator[1];
-        }
-    });
-    alert(creator);
 }
 //# sourceMappingURL=index.js.map

@@ -7,24 +7,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>DiscoverCC</title>
     <link rel="stylesheet" href="style.css">
-
   </head>
+
   <body class="bg-stone-100">
     <section class="w-full">
-       <nav class="w-full h-14 flex flex-col bg-[#393E46]">
+      <nav class="w-full h-14 flex flex-col bg-[#393E46]">
         <div class="w-full h-14 grid grid-cols-2">
           <div class="w-full h-14 bg-[#000000] flex flex-row justify-center p-3 border-b-4 border-stone-200">
             <div class="text-white text-lg animate-pulse ">by Jordan Powell</div>
-             <img class="w-6 h-6 pt-1 object-contain motion-safe:animate-pulse" src="/images/edit.png">  
+            <img class="w-6 h-6 pt-1 object-contain motion-safe:animate-pulse" src="/images/edit.png">  
           </div>
-           <div class="w-full h-14 bg-[#000000] flex flex-row justify-end gap-4 p-3 border-b-4 border-stone-200">
-            <a href="/home_page.html">
-              <button class="w-24 h-8 text-white border-white border-2 rounded-md hover:bg-[#FF0000] hover:border-white hover:text-white" >Home</button>
-            </a> 
-            <a href="/submit_page.html">
-              <button class="w-24 h-8 text-white border-white border-2 rounded-md hover:bg-[#FF0000] hover:border-white hover:text-white">Creator</button>
-            </a> 
-           </div>
+          <div class="w-full h-14 bg-[#000000] flex flex-row justify-end gap-4 p-3 border-b-4 border-stone-200">
+            <button class="w-24 h-8 text-white border-white border-2 rounded-md hover:bg-[#FF0000] hover:border-white hover:text-white" onclick="homePage()">Home</button>
+            <button class="w-24 h-8 text-white border-white border-2 rounded-md hover:bg-[#FF0000] hover:border-white hover:text-white" onclick="creatorPage()">Creator</button> 
+          </div>
         </div>
       </nav>
     </section>
@@ -98,7 +94,7 @@
       </div>      
     </section>
 
-    <script src="index.js"></script>
+    <script src="/dist/frontend_index.js"></script>
 
   </body>
 </html>
